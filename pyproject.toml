@@ -1,0 +1,29 @@
+[project]
+name = "agente-suporte-publico"
+version = "0.1.0"
+description = "Agente de suporte técnico RAG genérico (ex: Streamlit e FastAPI)"
+readme = "README.md"
+authors = [
+    { name = "Fábio de Oliveira Freire", email = "freirefabio.ff@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "agno>=2.9.0,<3.0.0",
+    "chonkie[semantic]>=1.7.0",
+    "chromadb>=1.5.9",
+    "firecrawl-py>=4.37.0",
+    "google-genai>=2.19.0",
+    "python-dotenv>=1.2.3",
+    "sqlalchemy>=2.0.52",
+    "streamlit>=1.40.0",
+]
+
+[project.scripts]
+agente-suporte = "agente_suporte.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false

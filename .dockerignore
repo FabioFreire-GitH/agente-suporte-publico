@@ -1,0 +1,30 @@
+# Ignora ambientes virtuais locais (o Docker cria o dele internamente)
+.venv/
+env/
+venv/
+
+# Ignora pastas de controle de versão e IDEs
+.git/
+.gitignore
+.gitattributes
+.devcontainer/
+.vscode/
+.gemini/
+
+# Ignora caches do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# ATENÇÃO: NÃO ignorar o arquivo .env se você for configurar variáveis pelo painel do Cloud Run (recomendado),
+# ou pode deixá-lo ignorado para nunca vazar chaves secretas no container público.
+.env
+
+# Ignora bancos de histórico de chat temporários criados em runtime local
+tmp/*.db
+tmp/*.db-shm
+tmp/*.db-wal
+# Mas MANTÉM os diretórios tmp/chroma_moub e tmp/chroma_bluve para não perder o RAG

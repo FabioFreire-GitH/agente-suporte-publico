@@ -1,0 +1,8 @@
+agno==2.9.0
+streamlit>=1.40.0
+chromadb>=1.5.9
+firecrawl-py>=4.37.0
+google-genai>=2.19.0
+python-dotenv>=1.2.3
+sqlalchemy>=2.0.52
+chonkie[semantic]>=1.7.0

@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+.env
+
+# Ignora arquivos de histórico de chat (gerados em runtime), mas
+# permite os bancos ChromaDB (chroma_moub/, chroma_bluve/) no repositório
+# para que o Streamlit Cloud não precise recriar os embeddings a cada reboot.
+tmp/*.db
+tmp/*.db-shm
+tmp/*.db-wal
+
+.vscode/
+.gemini/
+
