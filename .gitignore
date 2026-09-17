@@ -11,12 +11,8 @@ wheels/
 
 .env
 
-# Ignora arquivos de histórico de chat (gerados em runtime), mas
-# permite os bancos ChromaDB (chroma_moub/, chroma_bluve/) no repositório
-# para que o Streamlit Cloud não precise recriar os embeddings a cada reboot.
-tmp/*.db
-tmp/*.db-shm
-tmp/*.db-wal
+# Ignora arquivos de banco de dados locais e embeddings (gerados em runtime)
+tmp/
 
 .vscode/
 .gemini/

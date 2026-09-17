@@ -20,7 +20,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# 6. Copia todo o código da aplicação (incluindo src/, app.py e a pasta tmp/ com o banco ChromaDB)
+# 6. Copia todo o código da aplicação (incluindo src/ e app.py)
 COPY . .
 
 # 7. Porta padrão usada pelo Google Cloud Run (o Cloud Run injeta a variável $PORT dinamicamente)

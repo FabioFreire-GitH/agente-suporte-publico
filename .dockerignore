@@ -23,8 +23,5 @@ dist/
 # ou pode deixá-lo ignorado para nunca vazar chaves secretas no container público.
 .env
 
-# Ignora bancos de histórico de chat temporários criados em runtime local
-tmp/*.db
-tmp/*.db-shm
-tmp/*.db-wal
-# Mas MANTÉM os diretórios tmp/chroma_moub e tmp/chroma_bluve para não perder o RAG
+# Ignora o diretório temporário para não enviar os bancos locais ao container (serão recriados em runtime)
+tmp/
